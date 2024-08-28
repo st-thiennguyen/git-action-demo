@@ -1,6 +1,10 @@
 name: Hello world git action
 on:
   push:
+    paths:
+      - "!README.md"
+      - "!docs/**"
+      - "**.ts"
     branches: [main, develop]
 jobs:
   say-hello:
