@@ -1,0 +1,9 @@
+name: Hello world git action
+on:
+  push:
+    branches: [main, develop]
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo Xin Chao
